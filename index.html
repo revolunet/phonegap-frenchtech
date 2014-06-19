@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+
+<!--
+  Google HTML5 slide template
+
+  Authors: Luke Mahé (code)
+           Marcin Wichary (code and design)
+           
+           Dominic Mazzoni (browser compatibility)
+           Charles Chen (ChromeVox support)
+
+  URL: http://code.google.com/p/html5slides/
+
+
+  HTML5
+  Hybrid
+  Cross-platform
+  API
+  Distribution
+-->
+
+<html>
+  <head>
+    <title>Mozilla FrenchTech PhoneGap</title>
+
+    <meta charset='utf-8'>
+    <script src='prettify.js'></script>
+    <script src='slides.js'></script>
+  </head>
+  
+<style>
+    /* Your individual styles here, or just use inline styles if that’s
+       what you want. */
+    .slides.template-default > article:not(.nobackground):not(.biglogo) {
+      //background: url(images/logolong-100.png) bottom right no-repeat !important;  
+      background-color: white !important;  
+    } 
+    h2.normal {
+      position:relative;
+      top:10px;
+    }
+    ul.numbered li {
+      list-style-type: decimal;
+    }
+    .pink {
+      color:#f06;
+    }
+    .djgreen {
+      color: #163f2e;
+    }
+    .nomargin {
+      margin:0px;
+    }
+    h1 {
+      margin-top:120px;
+    }
+
+    h1.bigger {
+      font-weight:bold;
+      font-size: 80px !important;
+    }
+    .centerv {
+     margin-top:200px; 
+    }
+    div.freeticket {
+      padding-top: 40px;
+    }
+    div.features {
+      padding-top: 20px;
+    }
+    div.features div {
+      list-style: none !important;
+      background: transparent url(images/freept.jpg) no-repeat;
+      padding-left:60px;
+      vertical-align: middle;
+      line-height:60px;
+      margin-bottom:20px;
+    }
+    div.freeticket div {
+      list-style: none !important;
+      background: transparent url(images/freept.jpg) no-repeat;
+      padding-left:60px;
+      vertical-align: middle;
+      line-height:60px;
+      margin-bottom:30px;
+    }
+    .bold {
+        font-weight:bold;
+    }
+    div.list div {
+      margin-bottom:15px;
+      font-size:40px
+    }
+    table, tr, td {
+      border: 0 !important;
+    }
+    .valign {
+      vertical-align:middle;
+    }
+
+    .bggreen {background:rgb(165, 207, 53);}
+    .bgorange {background:orange;}
+    .bgred {background:rgb(196, 75, 75);}
+    
+  </style>
+
+
+  <body style='display: none'>
+
+    <section class='slides layout-regular template-default'>
+      
+      <!-- Your slides (<article>s) go here. Delete or comment out the
+           slides below. -->
+        
+      <article style="text-align:center">
+        <h1 style='margin-top:30px;font-size:50px'>PhoneGap and the mobile web</h1>
+        <br>
+        <img src="images/phonegap.png" width="300" />
+        <br>
+        <div style='font-size:18px'>Paris, @Mozilla, 19/06/2014</div>
+        
+        <table width="100%">
+          <tr>
+            <td align="center" class="valign"><img src="images/mozilla.png" height="50"/></td>
+            <td align="center" class="valign"><img src="images/frenchtech.png" height="80"/></td>
+            <td align="center" class="valign"><img src="images/revolunet.jpg" height="50"/></td>
+          </tr>
+        </table>
+      </article>
+
+      <article style="text-align:center">
+        <h1 style='font-size:80px;margin-top:20px;padding:0' class=pink align=center >Forecast : Volume</h1>
+        <br>
+        <img src="images/2014-2018-SP-and-Tablet-shipment-forecast-Jan-2014.png" width="600"/>
+      </article>
+
+<!--
+      <article style="text-align:center">
+        <h1 style='font-size:70px;margin-top:20px;padding:0' class=pink align=center >Fact : Android holdup</h1>
+        <br>
+        <img src="images/android-domination.png" width="600"/>
+      </article>
+-->
+
+
+      <article style="text-align:center">
+        <h1 style='font-size:200px;margin-top:200px;padding:0' class=pink align=center >Intro</h1>
+      </article>
+
+      <article style="text-align:center">
+        <h1 style='font-size:70px;margin-top:20px;padding:0' class=pink align=center >Genesis</h1>
+        <br>
+        <img src="images/hackaton.jpg" width="700"/>
+      </article>
+
+      <article style="text-align:center">
+        <h1 style='font-size:70px;margin-top:20px;padding:0' class=pink align=center >Interest</h1>
+        <br>
+        <img src="images/contributors-pg.png" width="500"/>
+      </article>
+
+      <article style="text-align:center">
+        <h1 style='font-size:70px;margin-top:20px;padding:0' class=pink align=center >Acquisition</h1>
+        <br><br>
+        <img src="images/adobe.png" width="300"/>
+        <br><br>
+        <img src="images/cordova-phonegap-build.jpg" width="500"/>
+      </article>
+
+      <article style="text-align:center">
+        <h1 style='font-size:70px;margin-top:20px;padding:0' class=pink align=center >Maturity</h1>
+        <br><br>
+        <img src="images/nodejs.png" width="300"/>
+        <br><br>
+        <img src="images/npm.jpg" width="200"/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="images/grunt.png" width="100"/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="images/browserify.png" width="220"/>
+      </article>
+
+      <article style="text-align:center">
+        <h1 style='font-size:70px;margin-top:20px;padding:0' class=pink align=center >Targets</h1>
+        <br><br>
+        <h1 style="margin:0;padding:0">
+          iOS, Android, Firefox OS
+          <br><br>
+          Windows Phone 7/8
+          <br><br>
+          Tizen, FireOS, Ubuntu
+          <br><br>
+          Blackberry...
+        <h1>
+      </article>
+
+      <article style="text-align:center">
+        <h1 style='font-size:100px;margin-top:20px;padding:0' class=pink align=center >Recap</h1>
+        <br><br><br>
+        <h1 style="margin:0;padding:0">Mature</h1>
+        <br><br>
+        <h1 style="margin:0;padding:0">Open source</h1>
+        <br><br>
+        <h1 style="margin:0;padding:0">Extensible</h1>
+      </article>
+
+
+<!--
+      <article>
+        <h1 style='font-size:100px;margin-top:0px' class=pink align=center >Quick intro</h1>
+        <br><br><br>
+        Cross platform mobile web developement
+        <br><br>
+        PhoneGap = commercial name for open source Cordova
+        <br><br>
+        PhoneGap = browser with a javascript bridge to native APIs
+        <br><br>
+        Core rewritten = now more performant and flexible
+        <br><br>
+        Apps can be 100% web, or combine native UI + WebViews
+      </article>
+-->
+
+
+      <article style="text-align:center">
+        <h1 style='font-size:200px;margin-top:200px;padding:0' class=pink align=center >Hybrid</h1>
+      </article>
+
+      <article>
+        <h1 style='font-size:80px;margin-top:0px;padding:0' class=pink align=center >Best of both worlds</h1>
+        <br><br>
+        <table>
+          <tr><td>&nbsp;</td><td align=center >Native</td><td align=center >WebApp</td><td align=center >Hybrid</td></tr>
+          <tr><td>Device API</td><td class=bggreen ></td><td class=bgred ></td><td class=bggreen ></td></tr>
+          <tr><td>Store/Market</td><td class=bggreen ></td><td class=bgred ></td><td class=bggreen ></td></tr>
+          <tr><td>Cross platform</td><td class=bgred ></td><td class=bggreen ></td><td class=bggreen ></td></tr>
+          <tr><td>Instant update</td><td class=bgred ></td><td class=bggreen ></td><td class=bggreen ></td></tr>
+          <tr><td>Offline</td><td class=bggreen ></td><td class=bgorange ></td><td class=bggreen ></td></tr>
+          <tr><td>Dev Cost</td><td class=bgorange ></td><td class=bggreen ></td><td class=bggreen ></td></tr>
+        </table>
+      </article>
+
+      <article style="text-align:center">
+        <h1 style='font-size:80px;margin-top:20px;padding:0' class=pink align=center >Flexibility</h1>
+        <br><br><br><br>
+        <h1 style="margin:0;padding:0">HTML5 <img src="images/volume_knob.jpg" width="200" style="vertical-align:middle"/> Native</h1>
+      </article>
+
+      <article>
+        <h1 style='font-size:80px;margin-top:0px;padding:0' class=pink align=center >How it works</h1>
+        <br><br>
+        <center><img src="images/architecture.jpg" width=700 /></center>
+      </article>
+
+      <article>
+        <h1 style='font-size:80px;margin-top:0px;padding:0' class=pink align=center >Standards</h1>
+        <br><br>
+        <center>
+          <img src="images/W3C.jpg" width=300 style="margin-left:40px"/>
+          <br><br>
+          <img src="images/html5.png" width=200 />
+          &nbsp;&nbsp;&nbsp;
+          <img src="images/javascript-240.png" height="180"/>
+          
+        </center>
+      </article>
+
+      <article>
+        <h1 style='font-size:80px;margin-top:0px;padding:0' class=pink align=center >Frameworks</h1>
+        <br><br><br>
+        <center>
+          
+          <img src="images/angularjs-logo.png" height="150"/>
+          &nbsp;&nbsp;&nbsp;
+          <img src="images/ionic.png" height="150"/>
+          &nbsp;&nbsp;&nbsp;
+          <img src="images/onsenui.png" height="150"/>
+          <br><br>
+          <img src="images/steroids.png" height="200" class="valign"/>
+          &nbsp;&nbsp;&nbsp;
+          <img src="images/sencha.png" height="100" class="valign"/>
+        </center>
+      </article>
+
+      <article>
+        <h1 style='font-size:80px;margin-top:0px;padding:0' class=pink align=center >Perfs</h1>
+        <br><br><br>
+        iOS8 : javascript = +300% (Nitro re-enabled)
+        <br><br>
+        Android 4.4 : Chrome webview with v8 engine
+        <br><br>
+        Regular perfs improvments on the PG bridge itself
+        <br><br><br>
+        (Still slower than pure-native though)
+      </article>
+
+      <article>
+        <h1 style='font-size:80px;margin-top:0px;padding:0' class=pink align=center >Test/debug</h1>
+        <br><br><br><br>
+        Test your apps right in your desktop browser
+        <br><br>
+        Full on-device debug with DevTools
+        <br><br>
+        Simulators and the CLI
+        <br><br>
+        Cloud testing with SauceLabs (Appium)
+      </article>
+
+      <article style="text-align:center">
+        <h1 style='font-size:100px;margin-top:20px;padding:0' class=pink align=center >Recap</h1>
+        <br><br><br>
+        <h1 style="margin:0;padding:0">Faster</h1>
+        <br><br>
+        <h1 style="margin:0;padding:0">Better</h1>
+        <br><br>
+        <h1 style="margin:0;padding:0">Stronger</h1>
+      </article>
+
+
+<!--
+      <article>
+        <h1 style='font-size:100px;margin-top:0px' class=pink align=center >PhoneGap day</h1>
+        <br><br><br>
+        Google released Chrome API Cordova plugins
+        <br><br>
+        Even More CLI/NodeJS goodness
+        <br><br>
+        Modern plugin architecture
+        <br><br>
+        Topcoat is awesome
+        <br><br>
+        More Blackberry / Firefox OS / Windows compatibility
+        <br><br>
+        PhoneGap app is not always a full web app
+      </article>
+
+
+      <article>
+        <br><br><br><br>
+        <h1 style='font-size:100px;margin-top:50px' class=pink align=center >PhoneGap apps</h1>
+        <br><br>
+        <br><br><br><br>
+      </article>
+-->
+
+      <article style="text-align:center">
+        <h1 style='font-size:200px;margin-top:200px;padding:0' class=pink align=center >Apps</h1>
+      </article>
+
+      <article style="text-align:center">
+        <h1 style='font-size:200px;margin-top:200px;padding:0' class=pink align=center ><!-- anti spoiler --></h1>
+      </article>
+
+      <article>
+        <h1 style='font-size:100px;margin-top:0px' class=pink align=center >impots.gouv \o/</h1>
+        <br><br><br>
+        <center>
+          <img src="images/references/impots/0.jpeg" width=230 />
+          <img src="images/references/impots/1.jpeg" width=230 />
+          <img src="images/references/impots/2.jpeg" width=230 />
+        </center>
+      </article>
+
+      <article>
+        <h1 style='font-size:100px;margin-top:0px' class=pink align=center >TripCase</h1>
+        <br>
+        <center>
+          <img src="images/references/tripcase/phones.jpeg" width=450 />
+          <br>
+          5 stars rating, from native to PhoneGap
+        </center>
+      </article>
+
+<!--
+      <article>
+        <h1 style='font-size:100px;margin-top:0px' class=pink align=center >Twist</h1>
+        <br><br>
+        <center>
+          <img src="images/references/twist/1.jpg" width=220 />
+          <img src="images/references/twist/2.jpg" width=220 />
+          <img src="images/references/twist/3.jpg" width=220 />
+          <br>
+          4.5 stars rating
+        </center>
+      </article>
+-->
+      <article>
+        <h1 style='font-size:100px;margin-top:0px' class=pink align=center >ExFm</h1>
+        <br><br>
+        <center>
+          <img src="images/references/exfm/jpeg-0.jpg" width=220 />
+          <img src="images/references/exfm/jpeg-2.jpg" width=220 />
+          <img src="images/references/exfm/jpeg-3.jpg" width=220 />
+          <br>
+          4.5 stars rating, from native to PhoneGap
+        </center>
+      </article>
+
+      <article>
+        <h1 style='font-size:100px;margin-top:0px' class=pink align=center >Untappd</h1>
+        <br><br>
+        <center>
+          <img src="images/references/untappd/screen568x568-1.jpeg" width=220 />
+          <img src="images/references/untappd/screen568x568-2.jpeg" width=220 />
+          <img src="images/references/untappd/screen568x568-3.jpeg" width=220 />
+          <br>
+          700k users, 4 stars rating
+        </center>
+      </article>
+
+      <article>
+        <h1 style='font-size:100px;margin-top:0px' class=pink align=center >SeLoger pro</h1>
+        <br><br>
+        <center>
+          <img src="images/references/poliris.png" width=700 />
+          <br>
+          100 apps deployed
+        </center>
+      </article>
+
+      <article>
+        <h1 style='font-size:100px;margin-top:0px' class=pink align=center >TEDx Paris</h1>
+        <br><br>
+        <center>
+          <img src="images/references/tedx.jpg" width=700 />
+          <br>
+          by @Joshfire, promoted in iPad TV ad
+        </center>
+      </article>
+<!--
+      <article>
+        <h1 style='font-size:100px;margin-top:0px' class=pink align=center >e-coffrefort</h1>
+        <br><br>
+        <center>
+          <img src="images/references/e-coffrefort.jpg" width=500 />
+        </center>
+      </article>
+-->
+
+      <article>
+        <br>
+        <h1 style='font-size:100px;margin-top:50px;padding:0' class=pink align=center >Thank you :)</h1>
+        <br><br><br>
+        <center>
+          <h3 style="font-size:40px">@revolunet</h3>
+          <br><br><br>
+          <h3 style="font-size:40px">@PhonegapParis<br><br>Meetup.com/Phonegap-Paris</h3>
+          <br><br>
+          <h3 style="font-size:70px">In web we trust</h3>
+        </center>
+      </article>
+
+    </section>
+
+  </body>
+</html>
